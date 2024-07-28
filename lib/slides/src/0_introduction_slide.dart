@@ -17,11 +17,17 @@ class IntroductionSlide extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.blank(
       builder: (context) {
-        return FlutterDeckBulletList(
-          items: const [
-            '設計の迷いがなくなる',
-            '新しいアイデアを得られる',
-            '内部実装に詳しくなる',
+        return Column(
+          children: [
+            Flexible(
+              child: FlutterDeckBulletList(
+                items: const [
+                  '設計の迷いがなくなる',
+                  '新しいアイデアを得られる',
+                  '内部実装に詳しくなる',
+                ],
+              ),
+            ),
           ],
         );
       },

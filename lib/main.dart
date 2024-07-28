@@ -30,6 +30,8 @@ class MainApp extends StatelessWidget {
         header: FlutterDeckHeaderConfiguration(showHeader: false),
       ),
       slides: slides,
+      lightTheme: lightTheme,
+      darkTheme: darkTheme,
     );
   }
 }
@@ -55,16 +57,19 @@ FlutterDeckThemeData _baseTheme({
       inputDecorationTheme: const InputDecorationTheme(
         filled: true,
       ),
+      cardTheme: const CardTheme(
+        clipBehavior: Clip.antiAlias,
+      ),
     ),
   );
 
   return foundation.copyWith(
     splitSlideTheme: FlutterDeckSplitSlideThemeData(
-      rightBackgroundColor: foundation.materialTheme.colorScheme.surfaceTint,
+      rightBackgroundColor: foundation.materialTheme.colorScheme.surface,
       rightColor: foundation.materialTheme.colorScheme.onSurface,
     ),
     bulletListTheme: const FlutterDeckBulletListThemeData(
-      textStyle: TextStyle(fontSize: 24),
+      textStyle: TextStyle(fontSize: 40),
     ),
     codeHighlightTheme: FlutterDeckCodeHighlightThemeData(
       backgroundColor: switch (brightness) {
