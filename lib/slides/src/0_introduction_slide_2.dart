@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class IntroductionSlide extends FlutterDeckSlideWidget {
-  IntroductionSlide()
+class Introduction2Slide extends FlutterDeckSlideWidget {
+  Introduction2Slide()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/0_introduction_slide',
+            route: '/0_introduction_slide_2',
             title: 'イントロ',
             header: FlutterDeckHeaderConfiguration(
               title: 'なぜパクるのか',

@@ -27,18 +27,20 @@ class UseInheritedWidgetSlide2 extends FlutterDeckSlideWidget {
               style: textTheme.headlineMedium,
             ),
             const SizedBox(height: 24),
-            const FlutterDeckCodeHighlight(
-                code: 'Form('
-                    '\n  child: Builder('
-                    '\n    builder: (context) {'
-                    '\n'
-                    '\n      FilledButton('
-                    '\n        onPressed: () {'
-                    '\n          Form.of(context).validate();'
-                    '\n        }'
-                    '\n    }'
-                    '\n  )'
-                    '\n)')
+            const Center(
+              child: FlutterDeckCodeHighlight(
+                  code: 'Form('
+                      '\n  child: Builder('
+                      '\n    builder: (context) {'
+                      '\n'
+                      '\n      FilledButton('
+                      '\n        onPressed: () {'
+                      '\n          Form.of(context).validate();'
+                      '\n        }'
+                      '\n    }'
+                      '\n  )'
+                      '\n)'),
+            )
           ],
         );
       },

@@ -7,7 +7,7 @@ class UseRaw4Slide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/2_use_raw_4_slide',
-            title: 'Raw クラスを使う',
+            title: 'Raw~ ウィジェット、コンストラクタ考えの活用',
             header: FlutterDeckHeaderConfiguration(
               title: 'Raw クラスに分けるメリット',
             ),
@@ -66,34 +66,38 @@ class UseRaw4Slide extends FlutterDeckSlideWidget {
                         SizedBox(width: 32),
                         Flexible(
                           child: SingleChildScrollView(
-                            child: FlutterDeckCodeHighlight(
-                              fileName: 'my_page.dart',
-                              code: 'class MyPage extends StatelessWidget {'
-                                  '\n  const MyPage({super.key});'
-                                  '\n'
-                                  '\n  @override'
-                                  '\n  Widget build(BuildContext context) {'
-                                  '\n    return Scaffold('
-                                  '\n      body: Column('
-                                  '\n        children: ['
-                                  '\n          MyPageCard('
-                                  '\n            title: Text(\'プロフィール\'),'
-                                  '\n            child: Column('
-                                  '\n              crossAxisAlignment: CrossAxisAlignment.start,'
-                                  '\n              children: ['
-                                  '\n                Text(\'名前：\$name\'),'
-                                  '\n                Text(\'年齢：\$age\'),'
-                                  '\n              ],'
-                                  '\n            ),'
-                                  '\n          ),'
-                                  '\n          MyPageCard('
-                                  '\n            title: Text(\'設定\'),'
-                                  '\n          ),'
-                                  '\n        ],'
-                                  '\n      ),'
-                                  '\n    );'
-                                  '\n  }'
-                                  '\n}',
+                            child: Column(
+                              children: [
+                                FlutterDeckCodeHighlight(
+                                  fileName: 'my_page.dart',
+                                  code: 'class MyPage extends StatelessWidget {'
+                                      '\n  const MyPage({super.key});'
+                                      '\n'
+                                      '\n  @override'
+                                      '\n  Widget build(BuildContext context) {'
+                                      '\n    return Scaffold('
+                                      '\n      body: Column('
+                                      '\n        children: ['
+                                      '\n          MyPageCard('
+                                      '\n            title: Text(\'プロフィール\'),'
+                                      '\n            child: Column('
+                                      '\n              crossAxisAlignment: CrossAxisAlignment.start,'
+                                      '\n              children: ['
+                                      '\n                Text(\'名前：\$name\'),'
+                                      '\n                Text(\'年齢：\$age\'),'
+                                      '\n              ],'
+                                      '\n            ),'
+                                      '\n          ),'
+                                      '\n          MyPageCard('
+                                      '\n            title: Text(\'設定\'),'
+                                      '\n          ),'
+                                      '\n        ],'
+                                      '\n      ),'
+                                      '\n    );'
+                                      '\n  }'
+                                      '\n}',
+                                ),
+                              ],
                             ),
                           ),
                         ),

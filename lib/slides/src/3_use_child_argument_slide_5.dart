@@ -23,7 +23,7 @@ class UseChildArgumentSlide5 extends FlutterDeckSlideWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'InheritedWidget を活用する',
+              'InheritedTheme を活用する',
               style: textTheme.headlineLarge,
             ),
             const SizedBox(height: 24),

@@ -8,7 +8,7 @@ class UseRaw2Slide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/2_use_raw_2_slide',
-            title: 'Raw クラスを使う',
+            title: 'Raw~ ウィジェット、コンストラクタ考えの活用',
             header: FlutterDeckHeaderConfiguration(
               title: 'Raw~ として分けられているものがある',
             ),
@@ -39,7 +39,7 @@ class UseRaw2Slide extends FlutterDeckSlideWidget {
                         '\nclass RawImage extends LeafRenderObjectWidget {',
                   ),
                   const FlutterDeckCodeHighlight(
-                    code: 'class Chip StatelessWidget {'
+                    code: 'class Chip extends StatelessWidget {'
                         '\n'
                         '\nclass RawChip extends StatefulWidget {',
                   ),

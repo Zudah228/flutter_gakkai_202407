@@ -7,7 +7,7 @@ class UseRaw5Slide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/2_use_raw_5_slide',
-            title: 'Raw クラスを使う',
+            title: 'Raw~ ウィジェット、コンストラクタ考えの活用',
             header: FlutterDeckHeaderConfiguration(
               title: 'Raw クラスに分けるメリット',
             ),
@@ -44,7 +44,7 @@ class UseRaw5Slide extends FlutterDeckSlideWidget {
                     ],
                   ),
                   const SizedBox(width: 64),
-                  const Expanded(
+                  Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -52,7 +52,7 @@ class UseRaw5Slide extends FlutterDeckSlideWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Flexible(
+                              const Flexible(
                                 child: SingleChildScrollView(
                                   child: FlutterDeckCodeHighlight(
                                     fileName: 'my_page_card.dart',
@@ -95,27 +95,41 @@ class UseRaw5Slide extends FlutterDeckSlideWidget {
                                   ),
                                 ),
                               ),
-                              SizedBox(width: 32),
-                              FlutterDeckCodeHighlight(
-                                fileName: 'my_page.dart',
-                                code: 'class MyPage extends StatelessWidget {'
-                                    '\n  const MyPage({super.key});'
-                                    '\n'
-                                    '\n  @override'
-                                    '\n  Widget build(BuildContext context) {'
-                                    '\n    return Scaffold('
-                                    '\n      body: Column('
-                                    '\n        children: ['
-                                    '\n          MyPageCard.profile('
-                                    '\n            name: name,'
-                                    '\n            age: age'
-                                    '\n          ),'
-                                    '\n          MyPageCard.settings(),'
-                                    '\n        ],'
-                                    '\n      ),'
-                                    '\n    );'
-                                    '\n  }'
-                                    '\n}',
+                              const SizedBox(width: 32),
+                              Column(
+                                children: [
+                                  const FlutterDeckCodeHighlight(
+                                    fileName: 'my_page.dart',
+                                    code:
+                                        'class MyPage extends StatelessWidget {'
+                                        '\n  const MyPage({super.key});'
+                                        '\n'
+                                        '\n  @override'
+                                        '\n  Widget build(BuildContext context) {'
+                                        '\n    return Scaffold('
+                                        '\n      body: Column('
+                                        '\n        children: ['
+                                        '\n          MyPageCard.profile('
+                                        '\n            name: name,'
+                                        '\n            age: age'
+                                        '\n          ),'
+                                        '\n          MyPageCard.settings(),'
+                                        '\n        ],'
+                                        '\n      ),'
+                                        '\n    );'
+                                        '\n  }'
+                                        '\n}',
+                                  ),
+                                  const SizedBox(height: 16),
+                                  Text(
+                                    '→ 「何が並んでいるか」\nに集中できる',
+                                    style: textTheme.headlineLarge!.copyWith(
+                                      decoration: TextDecoration.underline,
+                                      decorationColor:
+                                          themeData.colorScheme.primary,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),

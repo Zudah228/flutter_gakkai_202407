@@ -6,7 +6,7 @@ class UseRaw1Slide extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/2_use_raw_1_slide',
-            title: 'Raw クラスを使う',
+            title: 'Raw~ ウィジェット、コンストラクタ考えの活用',
           ),
         );
 

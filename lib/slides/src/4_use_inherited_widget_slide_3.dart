@@ -45,15 +45,6 @@ class UseInheritedWidgetSlide3 extends FlutterDeckSlideWidget {
               runSpacing: 12,
               children: [
                 FlutterDeckCodeHighlight(
-                  code: 'class Visibility extends StatelessWidget {'
-                      '\n  static bool of(BuildContext context) {'
-                      '\n'
-                      '\n}'
-                      '\n'
-                      '\nclass _VisibilityScope extends InheritedWidget {'
-                      '\n  const _VisibilityScope({required this.isVisible, required super.child});',
-                ),
-                FlutterDeckCodeHighlight(
                   code: 'class Form extends StatefulWidget {'
                       '\n  static FormState? maybeOf(BuildContext context) {'
                       '\n    final _FormScope? scope = context.dependOnInheritedWidgetOfExactType<_FormScope>();'
@@ -65,6 +56,15 @@ class UseInheritedWidgetSlide3 extends FlutterDeckSlideWidget {
                       '\n'
                       '\nclass _FormScope extends InheritedWidget {'
                       '\n  const _FormScope({',
+                ),
+                FlutterDeckCodeHighlight(
+                  code: 'class Visibility extends StatelessWidget {'
+                      '\n  static bool of(BuildContext context) {'
+                      '\n'
+                      '\n}'
+                      '\n'
+                      '\nclass _VisibilityScope extends InheritedWidget {'
+                      '\n  const _VisibilityScope({required this.isVisible, required super.child});',
                 ),
               ],
             ),
