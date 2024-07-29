@@ -20,7 +20,7 @@ class UseNamedConstructor2Slide extends FlutterDeckSlideWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'これを見たことありますか？',
+              'この Enum を見たことありますか？',
               style: textTheme.headlineLarge,
             ),
             const SizedBox(height: 24),

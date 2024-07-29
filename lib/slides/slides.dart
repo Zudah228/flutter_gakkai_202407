@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
-import 'package:flutter_gakkai_202407/slides/src/0_introduction_slide_1.dart';
 import 'package:flutter_gakkai_202407/slides/src/0_introduction_slide_2.dart';
 import 'package:flutter_gakkai_202407/slides/src/1_use_named_constructor_1_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/1_use_named_constructor_2_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/1_use_named_constructor_3_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/1_use_named_constructor_4_slide.dart';
+import 'package:flutter_gakkai_202407/slides/src/1_use_named_constructor_5_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/2_use_raw_1_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/2_use_raw_2_slide.dart';
 import 'package:flutter_gakkai_202407/slides/src/2_use_raw_3_slide.dart';
@@ -26,12 +26,13 @@ import 'package:flutter_gakkai_202407/slides/src/6_end_slide.dart';
 
 List<FlutterDeckSlideWidget> get slides => [
       TitleSlide(),
-      Introduction1Slide(),
+      // Introduction1Slide(),
       Introduction2Slide(),
       UseNamedConstructor1Slide(),
       UseNamedConstructor2Slide(),
       UseNamedConstructor3Slide(),
       UseNamedConstructor4Slide(),
+      UseNamedConstructor5Slide(),
       UseRaw1Slide(),
       UseRaw2Slide(),
       UseRaw3Slide(),

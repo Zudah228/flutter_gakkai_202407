@@ -56,71 +56,51 @@ class UseNamedConstructor4Slide extends FlutterDeckSlideWidget {
                   ],
                 ),
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(width: 64),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Before',
-                        style: textTheme.headlineMedium,
-                      ),
-                      const SizedBox(height: 16),
-                      const FlutterDeckCodeHighlight(
-                        code: 'enum MyBannerStyle {'
-                            '\n  info,'
-                            '\n  warning,'
-                            '\n  error,'
-                            '\n}'
-                            '\n'
-                            '\nclass MyBanner extends StatelessWidget {'
-                            '\n  const MyBanner({'
-                            '\n    super.key,'
-                            '\n    required this.style,'
-                            '\n  });'
-                            '\n'
-                            '\n  final MyBannerStyle style;'
-                            '\n}',
-                      ),
-                    ],
-                  ),
-                  const SizedBox(width: 100),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'After',
-                        style: textTheme.headlineMedium,
-                      ),
-                      const SizedBox(height: 16),
-                      const FlutterDeckCodeHighlight(
-                        code: 'enum _MyBannerVariant {'
-                            '\n  info,'
-                            '\n  warning,'
-                            '\n  error,'
-                            '\n}'
-                            '\n'
-                            '\nclass MyBanner extends StatelessWidget {'
-                            '\n  const MyBanner({'
-                            '\n    super.key,'
-                            '\n  }) : _variant = _MyBannerVariant.info;'
-                            '\n'
-                            '\n  const MyBanner.warning({'
-                            '\n    super.key,'
-                            '\n  }) : _variant = _MyBannerVariant.warning;'
-                            '\n'
-                            '\n  const MyBanner.error({'
-                            '\n    super.key,'
-                            '\n  }) : _variant = _MyBannerVariant.error;'
-                            '\n'
-                            '\n  final MyBannerVariant _variant;'
-                            '\n}',
-                      ),
-                    ],
-                  ),
-                ],
+              Expanded(
+                flex: 5,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(width: 64),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Before',
+                          style: textTheme.headlineMedium,
+                        ),
+                        const SizedBox(height: 16),
+                        const FlutterDeckCodeHighlight(
+                          code: 'Card(variant: CardVariant.elevated)'
+                              '\n'
+                              '\nCard(variant: CardVariant.filled)'
+                              '\n'
+                              '\nCard(variant: CardVariant.outlined)',
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 100),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'After',
+                          style: textTheme.headlineMedium,
+                        ),
+                        const SizedBox(height: 16),
+                        const FlutterDeckCodeHighlight(
+                          code: 'Card()'
+                              '\n'
+                              '\nCard.filled()'
+                              '\n'
+                              '\nCard.outlined()',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               )
             ],
           );
