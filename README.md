@@ -1,3 +1,4 @@
 # flutter_gakkai_202407
+Deploy to
 
-A new Flutter project.
+https://zudah228.github.io/flutter_gakkai_202407/#/title
